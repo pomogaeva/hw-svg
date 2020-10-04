@@ -1,0 +1,304 @@
+/* BASE, RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html,
+body,
+h1,
+h2,
+p,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+article {
+  padding: 40px 0;
+}
+
+.page-header,
+.services,
+.our-works {
+  color: #fff;
+}
+
+.about-us,
+.what-we-do,
+.contact-us,
+.page-footer {
+  color: #3c3c3c;
+}
+
+.about-us fieldset,
+.what-we-do fieldset,
+.contact-us fieldset {
+  border: 2px solid #3c3c3c;
+}
+
+fieldset.content {
+  margin: 3rem auto;
+}
+
+fieldset.content:last-of-type {
+  margin-bottom: 0;
+}
+
+/* HEADER */
+.page-header {
+  background: url(../images/hero-bg.jpg) center no-repeat;
+  text-transform: uppercase;
+  min-height: 700px;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  margin: 7rem auto 3rem auto;
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-header .title {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: .6em;
+  letter-spacing: 9px;
+}
+
+.desc {
+  margin: 0 auto 15px auto;
+  width: 80%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+
+.page-header .desc {
+  margin-top: 1em;
+  width: 100%;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 29px;
+}
+
+.scroll-to-top {
+  margin-top: 7rem;
+  cursor: pointer;
+}
+
+.scroll {
+  width: 30px;
+  height: 30px;
+}
+
+.scroll-to-top:hover {
+  opacity: .5;
+}
+
+/* SERVICES */
+.services {
+  background: url(../images/services.jpg) center no-repeat;
+}
+
+.services fieldset {
+  border: 2px solid #fff;
+}
+
+.services .desc:not(:last-of-type) {
+  margin-bottom: 0;
+}
+
+/* WHAT WE DO */
+.service {
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service:hover {
+  cursor: pointer;
+}
+
+.service:hover .service-title,
+.service:hover .icon {
+  opacity: .8;
+}
+
+.icon {
+  margin-bottom: 1.5rem;
+  font-size: 52px;
+  text-align: center;
+}
+
+.service .title {
+  color: #3c3c3c;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.service .desc {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+/* OUR WORKS */
+.our-works {
+  height: 100%;
+  max-width: 1500px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our-works-item {
+  min-height: 220px;
+  position: relative;
+  margin-bottom: 5px;
+  transition: opacity .2s ease-in;
+}
+
+.our-works-item:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+.topworkz {
+  background: url('../images/topworkz.jpg') center no-repeat;
+}
+
+.joint {
+  background: url('../images/joint.jpg') center no-repeat;
+}
+
+.market {
+  background: url('../images/market.jpg') center no-repeat;
+}
+
+.worktop {
+  background: url('../images/worktop.jpg') center no-repeat;
+}
+
+.label {
+  background: url('../images/lable.jpg') center no-repeat;
+}
+
+.kyiv {
+  background: url('../images/kyiv.jpg') center no-repeat;
+}
+
+.our-works-title {
+  padding: 5px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 34px;
+  color: #fff;
+  letter-spacing: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.our-works-item:hover .our-works-title {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* CONTACT US */
+.contact-us {
+  clear: both;
+}
+
+.btn {
+  margin: 1.5rem auto;
+  padding: 5px 10px;
+  width: 40%;
+  border: 2px solid #3c3c3c;
+  background-color: #3c3c3c;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .1s ease-in;
+}
+
+.btn:hover {
+  border: 2px solid #222020;
+  background-color: #222020;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.page-footer .content {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer .text {
+  margin-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* RESPONSIVENESS */
+/* DESKTOP */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 32.5%;
+    margin-right: 5px;
+  }
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
+}
